@@ -13,18 +13,18 @@ import java.util.List;
 @RequestMapping(path = "api/v1/student") // new path {localhost:8080/api/v1/student}
 public class StudentController {
 
+    // create a reference of method in StudentService.java
+    private final StudentService studentService;
+
+    public StudentController(StudentService studentService) {
+        this.studentService = studentService;
+    }
+
     @GetMapping
     public List<Student> getStudents(){
-        return List.of(
-                new Student(
-                        1L,
-                        "Marianne",
-                        22,
-                        LocalDate.of(1999, Month.OCTOBER, 7),
-                        "marianne@mapletreemedia.com"
-                        )
-        );
+        return studentService.getStudents();
     }
+
 }
 
 
