@@ -29,7 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="5b634ada-dae9-4ef9-8257-4b349c0cf489">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM student;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -62,8 +62,10 @@
   <component name="DBNavigator.Project.ParserDiagnosticsManager">
     <diagnostics-history />
   </component>
-  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="false">
+    <recently-used-interfaces>
+      <mapping database-type="POSTGRES" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
